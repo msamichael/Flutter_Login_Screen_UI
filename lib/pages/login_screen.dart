@@ -88,13 +88,13 @@ final passwordController = TextEditingController();
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Squaretile(image: 'lib/images/google-logo.png',),
-                SizedBox(width: 10,),
+                SizedBox(width: 25,),
                 Squaretile(image: 'lib/images/apple-logo.png',),
 
                 
               ],
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 20,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
