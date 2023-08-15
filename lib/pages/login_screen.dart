@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen_ui/components/my_button.dart';
 import 'package:login_screen_ui/components/my_textfield.dart';
+import 'package:login_screen_ui/components/square_tile.dart';
 
 class LoginPage extends StatelessWidget {
 LoginPage({super.key});
 
 final passwordController = TextEditingController();
   final usernameController = TextEditingController();
+
+  void signUserIn(){}
 
   
 
@@ -58,7 +61,7 @@ final passwordController = TextEditingController();
               ),
             ),
             const SizedBox(height: 20),
-            const MyButton(),
+             MyButton(onTap: signUserIn ,),
             const SizedBox(
               height: 45,
             ),
@@ -79,8 +82,19 @@ final passwordController = TextEditingController();
               ],
             ),
             const SizedBox(
-              height: 80,
+              height: 20,
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Squaretile(image: 'lib/images/google-logo.png',),
+                SizedBox(width: 10,),
+                Squaretile(image: 'lib/images/apple-logo.png',),
+
+                
+              ],
+            ),
+            SizedBox(height: 10,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
